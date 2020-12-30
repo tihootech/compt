@@ -46,6 +46,8 @@
     <!--[if lte IE 8]>
     <script src="js/plugins/flot/excanvas.min.js"></script>
     <![endif]-->
+
+    <link href="{{asset('css/app.css')}}" rel="stylesheet">
 </head>
 <body>
 
@@ -60,13 +62,9 @@
             @include('template.header')
 
             <!-- Main content -->
-            <div class="main-content">
+            <div id="vue-app" class="main-content">
 
-                <div class="panel">
-                    <div class="panel-body">
-                        ...
-                    </div>
-                </div>
+                <dashboard-manager></dashboard-manager>
 
                 <!-- Footer -->
                 <footer class="animatedParent animateOnce z-index-10">
@@ -90,6 +88,7 @@
     <script src="{{asset('assets/js/jquery.metisMenu.js')}}"></script>
     <script src="{{asset('assets/js/jquery-ui.js')}}"></script>
     <script src="{{asset('assets/js/jquery.blockUI.js')}}"></script>
+    <script src="{{asset('js/app.js')}}"></script>
 
 </body>
 </html>
