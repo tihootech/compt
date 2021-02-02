@@ -7,25 +7,37 @@
 <script>
 
     import VueRouter from 'vue-router';
-    import ScheduleMain from './schedule/ScheduleMain.vue';
-    import ComptMain from './compt/ComptMain.vue';
+    import ScheduleMain from './ScheduleMain.vue';
+    import ManageBaseInfo from './base/ManageBaseInfo.vue';
+    import CourseForm from './schedule/CourseForm.vue';
+    import CourseList from './schedule/CourseList.vue';
 
     export default {
         router : new VueRouter ({
             routes : [
                 {
                     path : '/',
-                    redirect : {name : 'schedule'}
+                    redirect : {name : 'schedule-main'}
                 },
                 {
-                    path : '/schedule',
-                    name : 'schedule',
+                    path : '/schedule/main',
+                    name : 'schedule-main',
                     component : ScheduleMain
                 },
                 {
-                    path : '/compt',
-                    name : 'compt',
-                    component : ComptMain
+                    path : '/course/form/:cid?',
+                    name : 'form-course',
+                    component : CourseForm
+                },
+                {
+                    path : '/course/list',
+                    name : 'list-course',
+                    component : CourseList
+                },
+                {
+                    path : '/baseinfo/manage',
+                    name : 'manage-baseinfo',
+                    component : ManageBaseInfo
                 },
             ]
         })

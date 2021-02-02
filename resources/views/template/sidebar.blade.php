@@ -12,10 +12,7 @@
     <ul id="side-nav" class="main-menu navbar-collapse collapse">
 
         <li>
-            <a href="#/schedule"><i class="icon-calendar"></i><span class="title"> ماژول فوق برنامه </span></a>
-        </li>
-        <li>
-            <a href="#/compt"><i class="icon-trophy"></i><span class="title"> ماژول مسابقات </span></a>
+            <a href="#/schedule/main"><i class="icon-calendar"></i><span class="title"> فوق برنامه </span></a>
         </li>
 
     </ul>

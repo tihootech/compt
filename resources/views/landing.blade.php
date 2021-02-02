@@ -48,6 +48,7 @@
     <![endif]-->
 
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
+    <link href="{{asset('css/custom.css')}}" rel="stylesheet">
 </head>
 <body>
 
@@ -88,6 +89,10 @@
     <script src="{{asset('assets/js/jquery.metisMenu.js')}}"></script>
     <script src="{{asset('assets/js/jquery-ui.js')}}"></script>
     <script src="{{asset('assets/js/jquery.blockUI.js')}}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script src="{{asset('js/custom.js')}}"></script>
     <script src="{{asset('js/app.js')}}"></script>
 
 </body>
